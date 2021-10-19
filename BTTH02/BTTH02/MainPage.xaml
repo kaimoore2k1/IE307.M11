@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTTH02.MainPage">
+
+    <StackLayout Padding="10">
+        <Button Text="Bài 01"
+                Clicked="Button_Clicked"></Button>
+        <Button Text="Bài 02"
+                Clicked="Button_Clicked_1"></Button>
+        <Button Text="Bài 03"
+                Clicked="Button_Clicked_2"></Button>
+        <Button Text="Bài 04"
+                Clicked="Button_Clicked_3"></Button>
+    </StackLayout>
+
+</ContentPage>

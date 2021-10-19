@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTTH02.Bai03"
+             Title="Monkey">
+    <ContentPage.Content>
+        <ListView x:Name="List03" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="30">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding picture}"
+                                   Grid.RowSpan="2"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   HeightRequest="100" WidthRequest="100"
+                                   Aspect="AspectFill"></Image>
+                            <Label Text="{Binding Name}"
+                                   FontSize="Large" FontAttributes="Bold"
+                                   Grid.Row="0" Grid.Column="1"
+                                   VerticalOptions="Start"
+                                   ></Label>
+                            <Label Text="{Binding Locate}"
+                                   FontSize="Large"
+                                   Grid.Row="1" Grid.Column="1"
+                                   VerticalOptions="End"
+                                   ></Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTTH02.Bai01"
+             Title="ListView(Text)">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="List01"></ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
